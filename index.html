@@ -16,4 +16,31 @@
 
     <label for="resultado">el resultado de la suma es: </label>
     <input type="number" id="aqui" name="resultado">
+    <script>
+        function sumar(){
+
+        a = document.getElementById("a").value;
+        b = document.getElementById("b").value;
+        var a;
+        var b;
+        var resultado;
+        
+        if(a ==""){
+            a = 0; }
+        else{
+        a = parseInt(a);
+        }
+        if(b ==""){
+            b = 0; }
+        else{
+        b = parseInt(b);
+        }
+        resultado = a + b;
+        console.log(a);
+        console.log(b);
+        console.log(resultado);
+        document.getElementById("aqui").value = resultado;
+        }
+    </script>
+</body>
 </html>
